@@ -43,5 +43,3 @@ while user_input != 'E'
     puts "Invalid entry, try again"
   end
 end
-
-# Publsihed to Github
