@@ -1,3 +1,7 @@
+# Open Balance File for writing
+
+file = File.open("balance.txt", "w")
+
 # Welcome Message
 puts "Welcome to the Coder Bank, Please enter your name"
 name = gets.chomp
@@ -6,6 +10,7 @@ name = gets.chomp
 user_input = ""
 $balance = 0
 
+# Continually accept user input until exit is used
 while user_input != 'E'
 
   puts "Hello #{name}, please choose from the options below:
@@ -43,3 +48,6 @@ while user_input != 'E'
     puts "Invalid entry, try again"
   end
 end
+
+# Close File
+file.close
